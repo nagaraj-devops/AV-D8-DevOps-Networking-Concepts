@@ -1,45 +1,44 @@
 🌐 Networking Fundamentals
 1. IP Address (Internet Protocol Address)
 
-An IP address is a unique identifier assigned to each device on a network.
+- An IP address is a unique identifier assigned to each device on a network.
 
-Two main versions:
+- Two main versions:
 
-IPv4 → 32-bit (e.g., 192.168.1.1) → about 4.3 billion addresses.
+  - IPv4 → 32-bit (e.g., 192.168.1.1) → about 4.3 billion addresses.
 
-IPv6 → 128-bit (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334) → designed to replace IPv4 due to address shortage.
+  - IPv6 → 128-bit (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334) → designed to replace IPv4 due to address shortage.
 
-📌 Example:
-If your laptop connects to WiFi, it gets an IP (say 192.168.1.10) so the router knows how to send/receive data to it.
+📌 Example: If your laptop connects to WiFi, it gets an IP (say 192.168.1.10) so the router knows how to send/receive data to it.
 
 2. CIDR (Classless Inter-Domain Routing)
 
-CIDR is a way to define IP ranges more efficiently using a suffix (called a prefix length).
+- CIDR is a way to define IP ranges more efficiently using a suffix (called a prefix length).
 
-Format: <IP>/<prefix>
+- Format: <IP>/<prefix>
 
-Example: 192.168.1.0/24 → means first 24 bits are fixed (network part), last 8 bits are available for hosts.
+  -  Example: 192.168.1.0/24 → means first 24 bits are fixed (network part), last 8 bits are available for hosts.
 
-This gives 2^8 = 256 addresses (from 192.168.1.0 to 192.168.1.255).
+  - This gives 2^8 = 256 addresses (from 192.168.1.0 to 192.168.1.255).
 
 👉 /24 means 255.255.255.0 subnet mask.
 👉 /16 means 255.255.0.0 (bigger network).
 
 3. Subnet
 
-A subnet (subnetwork) is a smaller network created from a larger network by dividing IP ranges.
+- A subnet (subnetwork) is a smaller network created from a larger network by dividing IP ranges.
+  
+- Helps organize and optimize traffic.
+  
+- Example:
 
-Helps organize and optimize traffic.
+  - Main network: 192.168.0.0/16 (65,536 addresses).
 
-Example:
+  - Can be split into:
 
-Main network: 192.168.0.0/16 (65,536 addresses).
+  - 192.168.1.0/24
 
-Can be split into:
-
-192.168.1.0/24
-
-192.168.2.0/24
+  - 192.168.2.0/24
 
 Each with 256 addresses.
 
